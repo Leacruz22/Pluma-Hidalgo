@@ -1,0 +1,360 @@
+*
+{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+
+/* class navegacion*/
+
+.navegacion{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.687);
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 3%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+/* tamaño del logo*/
+nav .logo-pluma {
+    width: 120px;
+    height: 50px;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    display: inline-block;
+    color: rgb(252, 252, 252);
+    padding: 20px 10px;
+}
+.navegacion nav ul li a:hover {
+    background-color: rgb(35, 180, 161);
+    transition: all .3s;
+    width: 100%;
+   
+}
+
+.videoplum {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+   
+
+}
+
+/* sobre el fondo*/ 
+@media (min-aspect-ratio: 16/9){
+    .videoplum {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .videoplum {
+        width: auto;
+        height: 100%;
+    }
+}
+
+.fondo {
+    background: url("img/") no-repeat center;
+    background-size: cover;
+}
+
+
+/*informacion del municipio*/
+.content2 h1 {
+
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 90px;
+    font-size: 50px;
+}
+
+/*contenido*/
+.content {
+    text-align: center;
+    
+}
+.content h1{
+    font-size:200px;
+    color: rgb(244, 241, 241);
+    font-weight: 600;
+    transition: 0.5s;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+
+/* sobre itireraio */
+
+.contenedoor {
+    background-color: rgb(252, 252, 252);
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+}
+
+.titulo {
+    background-color: rgba(0, 0, 0, 0.716);
+    padding: 40px;  /* margen superior*/
+    color: rgb(253, 251, 251);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+
+}
+.titulo2 {
+    background-color: rgb(255, 255, 255);
+    padding: 40px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+}
+.contenedor-sobre-itinerario {
+    display: flex;
+    justify-content: space-evenly;
+}
+.imagen-iglesia {
+    width: 60%;
+    height: 800px;
+    margin-bottom: 40px;
+}
+.sobre-itinerario .contenido-informacion {
+    width: 50% ;
+}
+.contenido-informacion p {
+    padding: 20px 0px 30px 20px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+
+}
+.contenido-informacion h3 {
+    padding: 20px 0px 30px 20px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+}
+
+/* coffe */
+
+.hero_container {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 2fr;
+    place-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.hero_title {
+    padding: 0px 45px 20px 0px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+
+}
+
+.hero_copy{
+ font-size: 1.2rem;
+ margin: 25px;
+}
+
+
+.hero_img {
+    width: 120%;
+    height: 440px;
+  
+   
+}
+
+/* sobre cafe */
+
+.contenedor-sobre-cafe {
+    justify-content: space-evenly;
+    display: flex;
+    
+
+}
+.imagen-cafe {
+    width: 55%;
+    height: 400px;
+    font-size: 25px;
+    
+}
+
+.contenido-cafe {
+    padding: 20px 0px 0px 15px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+
+}
+.contenido-cafe p {
+    padding: 0px 0px 0px 15px;
+    font-weight: 300;
+    text-align: justify;
+    margin-bottom: 80px;
+}
+
+/* sobre relieve */
+
+.reliev_container {
+    margin-bottom: 40px;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 3fr 2fr;
+    place-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+    
+}
+
+.reliev_texts {
+    padding: 0px 25px 20px 0px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+
+}
+
+.reliev_texts p{
+    padding: 0px 45px 20px 0px;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 25px;
+}
+
+.hero_copy{
+ font-size: 1.2rem;
+ margin: 25px;
+ 
+}
+
+
+.reliev_img {
+    width: 120%;
+    height: 450px;
+    font-size: 25px;
+   
+}
+
+/* descripcion de fincas visitadas */
+.content4 h1 {
+
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    font-size: 50px;
+}
+
+
+/* descripcion del google maps */
+.content3 h1 {
+
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 50px;
+        font-size: 50px;
+    }
+
+/* google maps */
+.ubicacionpluma {
+
+    height: 490px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.row {
+ display: flex;
+ height: 700px;
+ padding: 100px;
+}
+
+.column {
+    display: flex;
+    flex: 85%;
+    align-items: center;
+    width: 200%;
+    margin-bottom: 10px;
+   }
+
+
+   .contenedor-footer {
+    background-color: black;
+    color: #fff;
+    gap: 90px;
+    font-size: 15px;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+
+}
+.content-foo h4 {
+    margin: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+.content-foo p {
+    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+.content-foot h4 {
+    margin: 30px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: justify;
+}
+.content-foot p {
+    margin: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    text-align: justify;
+}
